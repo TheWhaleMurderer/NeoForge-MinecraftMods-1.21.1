@@ -3,6 +3,7 @@ package net.thewhalemurderer.tutorialmod;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.thewhalemurderer.tutorialmod.block.ModBlocks;
+import net.thewhalemurderer.tutorialmod.item.ModCreativeModeTabs;
 import net.thewhalemurderer.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -33,6 +34,7 @@ public class TutorialMod
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public TutorialMod(IEventBus modEventBus, ModContainer modContainer)    {
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -40,6 +42,9 @@ public class TutorialMod
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -63,6 +68,7 @@ public class TutorialMod
 
             if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
                 event.accept(ModBlocks.BISMUTH_BLOCK);
+                event.accept(ModBlocks.BISMUTH_ORE);
             }
     }
 

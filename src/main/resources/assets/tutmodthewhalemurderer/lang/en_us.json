@@ -2,5 +2,9 @@
   "item.tutmodthewhalemurderer.bismuth": "Bismuth",
   "item.tutmodthewhalemurderer.raw_bismuth": "Raw Bismuth",
 
-  "block.tutmodthewhalemurderer.bismuth_block": "Block of Bismuth"
+  "block.tutmodthewhalemurderer.bismuth_block": "Block of Bismuth",
+  "block.tutmodthewhalemurderer.bismuth_ore": "Bismuth Ore",
+
+  "creativetab.tutmodthewhalemurderer.bismuth_items": "Bismuth Items",
+  "creativetab.tutmodthewhalemurderer.bismuth_blocks": "Bismuth Blocks"
 }
