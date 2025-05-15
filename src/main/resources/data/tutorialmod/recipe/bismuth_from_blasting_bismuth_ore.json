@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.25,
+  "ingredients": {
+      "item": "tutmodthewhalemurderer:bismuth_block"
+    },
+  "result": {
+    "count": 1,
+    "id": "tutmodthewhalemurderer:bismuth"
+  }
+}
